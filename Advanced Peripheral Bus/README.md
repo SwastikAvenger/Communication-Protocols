@@ -46,7 +46,7 @@ The Slave Error is signalled when the APB Slave cannot complete the transaction 
 
 In APB3 and APB4, the slave error is indicated using the PSLVERR signal. If PSLVERR is high, some error has occurred during the transaction, else the transaction is successful. This signal is driven by the slave and becomes valid only when PREADY is high. The Master checks the PSLVERR signal to verify whether the transaction is successful or not. In this project, we have not used the PSLVERR signal. PSLVERR is only considered valid during the last cycle of an APB transfer, when PSEL, PENABLE, and PREADY are all HIGH. It is recommended, but not required, that PSLVERR is driven LOW when PSEL, PENABLE, or PREADY are 
 LOW.
-The following figures show the Write Transfer with Slave Error and Read Transfer with Slave Error respectively.
+The following figures show the Write Transfer with Slave Error and Read Transfer with Slave Error respectively. 
 
 <img width="561" height="316" alt="image" src="https://github.com/user-attachments/assets/dd6586b4-aaab-4849-a567-4a19ba6337d4" />
 
